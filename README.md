@@ -1,2 +1,2 @@
 # unipma-stream
-Stream software based from OBS.
+Single client ShoutCast listener.
