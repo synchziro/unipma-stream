@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UNIPMAStream</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="channel">Kanal</string>
+    <string name="streamGenere">Genre:</string>
+    <string name="streamTitle">Judul:</string>
+    <string name="sendGreetings">Bagikan</string>
+    <string name="buffering">Memuat...</string>
+    <string name="pleaseWait">Tunggu sebentar...</string>
+    <string name="seeSchedule">Lihat jadwal</string>
+    <string name="Schedule">Jadwal</string>
+    <string name="backToExit">Tekan sekali lagi untuk keluar.</string>
+</resources>
