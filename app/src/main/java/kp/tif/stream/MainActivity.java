@@ -71,8 +71,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mHeadphoneUnplugReceiver = new HeadphoneUnplugReceiver();
         registerReceiver(mHeadphoneUnplugReceiver, headphoneUnplugIntentFilter);
 
-        //new thread to update stream title and genre every 30 seconds
-
     }
 
     @Override
@@ -260,7 +258,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         alert.show();
     }
 
-    //TODO: Move class to different file
     public class HeadphoneUnplugReceiver extends BroadcastReceiver {
 
         @Override
