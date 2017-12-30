@@ -164,7 +164,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     }
 
     private void setupShoutcastAddresses() {
-        channelSCAddressHash.put("Deptics", "http://streaming.shoutcast.com/Unstream-UNIPMAStreamNow");
+        channelSCAddressHash.put("#stream_title", "#shoutcast_url_stream");
         List<String> channelList = new ArrayList(channelSCAddressHash.keySet());
         Collections.sort(channelList, Collections.reverseOrder());
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
@@ -217,8 +217,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        if (chosenChannel.equals("Deptik")) {
-            wv.loadUrl("http://tif.unipma.ac.id/daftar_agenda");
+        if (chosenChannel.equals("#share_title")) {
+            wv.loadUrl("#share_link");
         }
         wv.setWebViewClient(new WebViewClient() {
             @Override
@@ -242,8 +242,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         WebSettings webSettings = wv.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        if (chosenChannel.equals("Deptik")) {
-            wv.loadUrl("http://tif.unipma.ac.id/daftar_agenda");
+        if (chosenChannel.equals("#schedule_title")) {
+            wv.loadUrl("#schedule_url");
         }
         wv.setWebViewClient(new WebViewClient() {
             @Override
